@@ -2697,10 +2697,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" value="TDK"/>
 <attribute name="MFGP" value="C2012X5R1H104K085AA"/>
 </part>
-<part name="U$17" library="GW-devices" deviceset="RF-C" device="0402" value="1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1E105K125AA"/>
-</part>
+<part name="U$17" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
 <part name="U$24" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
@@ -2726,10 +2723,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" value="TDK"/>
 <attribute name="MFGP" value="C2012X5R1H104K085AA"/>
 </part>
-<part name="U$34" library="GW-devices" deviceset="RF-C" device="0402" value="1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1E105K125AA"/>
-</part>
+<part name="U$34" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
 <part name="U$35" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
@@ -2826,14 +2820,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" value="CRCW080510K0FKEA"/>
 </part>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="U$29" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1H104K085AA"/>
-</part>
-<part name="U$36" library="GW-devices" deviceset="RF-C" device="0402" value="1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1E105K125AA"/>
-</part>
+<part name="U$29" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF"/>
+<part name="U$36" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
 <part name="U$37" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
@@ -2921,10 +2909,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" x="-91.44" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-91.44" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$17" gate="G$1" x="-83.82" y="144.78" rot="R180">
-<attribute name="MFGP" x="-83.82" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="-83.82" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$17" gate="G$1" x="-83.82" y="144.78" rot="R180"/>
 <instance part="U$24" gate="G$1" x="-76.2" y="144.78" rot="R180">
 <attribute name="MFGP" x="-76.2" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-76.2" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
@@ -2952,10 +2937,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" x="99.06" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="99.06" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$34" gate="G$1" x="104.14" y="160.02" rot="R180">
-<attribute name="MFGP" x="104.14" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="104.14" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$34" gate="G$1" x="104.14" y="160.02" rot="R180"/>
 <instance part="U$35" gate="G$1" x="109.22" y="160.02" rot="R180">
 <attribute name="MFGP" x="109.22" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="109.22" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
@@ -3052,14 +3034,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" x="-66.04" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND27" gate="1" x="-30.48" y="111.76"/>
-<instance part="U$29" gate="G$1" x="-53.34" y="99.06" rot="R180">
-<attribute name="MFGP" x="-53.34" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="-53.34" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="U$36" gate="G$1" x="-45.72" y="99.06" rot="R180">
-<attribute name="MFGP" x="-45.72" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="-45.72" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$29" gate="G$1" x="-53.34" y="99.06" rot="R180"/>
+<instance part="U$36" gate="G$1" x="-45.72" y="99.06" rot="R180"/>
 <instance part="U$37" gate="G$1" x="-38.1" y="99.06" rot="R180">
 <attribute name="MFGP" x="-38.1" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-38.1" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
@@ -4110,6 +4086,16 @@ Source: tps62120.pdf (www.ti.com)</description>
 <junction x="-53.34" y="96.52"/>
 <junction x="-38.1" y="96.52"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
+<pinref part="U$14" gate="G$1" pin="VDD"/>
+<wire x1="-2.54" y1="101.6" x2="-33.02" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="VDDA"/>
+<wire x1="-2.54" y1="99.06" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="101.6" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-33.02" y="99.06"/>
+<pinref part="U$14" gate="G$1" pin="DISP"/>
+<wire x1="-2.54" y1="96.52" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="99.06" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-33.02" y="96.52"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -4408,41 +4394,17 @@ Source: tps62120.pdf (www.ti.com)</description>
 <pinref part="U$28" gate="&gt;NAME" pin="1"/>
 </segment>
 </net>
-<net name="N$66" class="0">
-<segment>
-<pinref part="U$14" gate="G$1" pin="VDD"/>
-<wire x1="-2.54" y1="101.6" x2="-33.02" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="VDDA"/>
-<wire x1="-2.54" y1="99.06" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="101.6" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
-<junction x="-33.02" y="99.06"/>
-<pinref part="U$14" gate="G$1" pin="DISP"/>
-<wire x1="-2.54" y1="96.52" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="99.06" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$67" class="2">
+<net name="N$64" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="EXTMODE"/>
-<wire x1="-2.54" y1="104.14" x2="-25.4" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$64" class="2">
-<segment>
 <pinref part="U$27" gate="&gt;NAME" pin="1"/>
-<wire x1="-20.32" y1="104.14" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="104.14" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,-137.16,190.5,OUT,OUT1,,,,"/>
-<approved hash="202,1,-276.86,170.18,U$13,3,,,,"/>
-<approved hash="202,1,-266.7,157.48,U$14,3,,,,"/>
-<approved hash="202,1,-256.54,144.78,U$15,3,,,,"/>
-<approved hash="202,1,-243.84,132.08,U$16,3,,,,"/>
-<approved hash="113,1,-42.7355,143.51,U$2,,,,,"/>
 <approved hash="113,1,-127,187.621,IC1,,,,,"/>
 </errors>
 </schematic>

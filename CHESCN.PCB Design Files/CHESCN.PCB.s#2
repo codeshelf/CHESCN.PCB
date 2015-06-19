@@ -2077,21 +2077,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </library>
 <library name="adafruit">
 <packages>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-</package>
 <package name="SMADIODE">
 <description>&lt;b&gt;SMA Surface Mount Diode&lt;/b&gt;</description>
 <wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.2032" layer="51"/>
@@ -2252,9 +2237,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </package>
 </packages>
 <symbols>
-<symbol name="DOT">
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-</symbol>
 <symbol name="DIODE">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
@@ -2268,20 +2250,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FIDUCIAL">
-<description>For use by pick and place machines to calibrate the vision/machine, 1mm
-&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="DOT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FIDUCIAL_1MM">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DIODE" prefix="D" uservalue="yes">
 <description>&lt;b&gt;Diode&lt;/b&gt;
 &lt;p&gt;
@@ -2688,10 +2656,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" value="TDK"/>
 <attribute name="MFGP" value="C2012X5R1E105K125AA"/>
 </part>
-<part name="U$6" library="GW-devices" deviceset="RF-R" device="0402" value="10k">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
-</part>
+<part name="U$6" library="GW-devices" deviceset="RF-R" device="0402" value="10k"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF"/>
 <part name="U$17" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
@@ -2699,10 +2664,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
 </part>
-<part name="U$25" library="GW-devices" deviceset="RF-R" device="0402" value="10k">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
-</part>
+<part name="U$25" library="GW-devices" deviceset="RF-R" device="0402" value="10k"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U$30" library="KW2" deviceset="RA_BUTTON" device="" value=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -2724,21 +2686,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 </part>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$38" library="adafruit" deviceset="FIDUCIAL" device="" value="">
-<attribute name="NOTES" value="DNP"/>
-</part>
-<part name="U$40" library="adafruit" deviceset="FIDUCIAL" device="" value="">
-<attribute name="NOTES" value="DNP"/>
-</part>
-<part name="U$41" library="adafruit" deviceset="FIDUCIAL" device="" value="">
-<attribute name="NOTES" value="DNP"/>
-</part>
-<part name="U$42" library="adafruit" deviceset="FIDUCIAL" device="" value="">
-<attribute name="NOTES" value="DNP"/>
-</part>
-<part name="U$43" library="adafruit" deviceset="FIDUCIAL" device="" value="">
-<attribute name="NOTES" value="DNP"/>
-</part>
 <part name="U$44" library="linear-technology" deviceset="LTC3112" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
@@ -2752,7 +2699,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <part name="R2" library="GW-devices" deviceset="RF-R" device="0402" value="33k"/>
 <part name="R3" library="GW-devices" deviceset="RF-R" device="0402" value="10k"/>
 <part name="C4" library="GW-devices" deviceset="RF-C" device="0402" value="47pF"/>
-<part name="R4" library="GW-devices" deviceset="RF-R" device="0402" value="847k"/>
+<part name="R4" library="GW-devices" deviceset="RF-R" device="0402" value="845k"/>
 <part name="R5" library="GW-devices" deviceset="RF-R" device="0402" value="158k"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="GW-devices" deviceset="RF-C" device="0402" value="100pF"/>
@@ -2805,14 +2752,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <part name="U$26" library="KW2" deviceset="SFV12R-1STE1HLF" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$27" library="GW-devices" deviceset="RF-R" device="0402" value="10k">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
-</part>
-<part name="U$28" library="GW-devices" deviceset="RF-R" device="0402" value="10k">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
-</part>
+<part name="U$27" library="GW-devices" deviceset="RF-R" device="0402" value="10k"/>
+<part name="U$28" library="GW-devices" deviceset="RF-R" device="0402" value="10k"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="U$29" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF"/>
 <part name="U$36" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
@@ -2894,10 +2835,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" x="-378.46" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFGN" x="-378.46" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="U$6" gate="&gt;NAME" x="-68.58" y="154.94" rot="R90">
-<attribute name="MFGP" x="-68.58" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MFGN" x="-68.58" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
+<instance part="U$6" gate="&gt;NAME" x="-68.58" y="154.94" rot="R90"/>
 <instance part="GND13" gate="1" x="-78.74" y="165.1"/>
 <instance part="U$7" gate="G$1" x="-91.44" y="144.78" rot="R180"/>
 <instance part="U$17" gate="G$1" x="-83.82" y="144.78" rot="R180"/>
@@ -2905,10 +2843,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" x="-76.2" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-76.2" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$25" gate="&gt;NAME" x="-104.14" y="147.32" rot="R90">
-<attribute name="MFGP" x="-104.14" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MFGN" x="-104.14" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
+<instance part="U$25" gate="&gt;NAME" x="-104.14" y="147.32" rot="R90"/>
 <instance part="GND15" gate="1" x="-83.82" y="83.82"/>
 <instance part="U$30" gate="G$1" x="-124.46" y="78.74" rot="MR0">
 <attribute name="MFGP" x="-124.46" y="78.74" size="1.778" layer="96" rot="MR0" display="off"/>
@@ -2932,21 +2867,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 </instance>
 <instance part="GND18" gate="1" x="104.14" y="152.4"/>
 <instance part="+3V2" gate="G$1" x="-406.4" y="187.96"/>
-<instance part="U$38" gate="G$1" x="-134.62" y="231.14" smashed="yes">
-<attribute name="NOTES" x="-134.62" y="231.14" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$40" gate="G$1" x="-83.82" y="231.14">
-<attribute name="NOTES" x="-83.82" y="231.14" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$41" gate="G$1" x="-137.16" y="218.44">
-<attribute name="NOTES" x="-137.16" y="218.44" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$42" gate="G$1" x="-116.84" y="218.44">
-<attribute name="NOTES" x="-116.84" y="218.44" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$43" gate="G$1" x="-86.36" y="218.44">
-<attribute name="NOTES" x="-86.36" y="218.44" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="U$44" gate="G$1" x="208.28" y="137.16"/>
 <instance part="GND19" gate="1" x="205.74" y="104.14"/>
 <instance part="GND20" gate="1" x="190.5" y="91.44"/>
@@ -3013,14 +2933,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <instance part="U$26" gate="G$1" x="-500.38" y="144.78" rot="MR90"/>
 <instance part="GND14" gate="1" x="-472.44" y="119.38"/>
 <instance part="+3V3" gate="G$1" x="-474.98" y="170.18"/>
-<instance part="U$27" gate="&gt;NAME" x="-22.86" y="109.22" rot="R90">
-<attribute name="MFGP" x="-22.86" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MFGN" x="-22.86" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="U$28" gate="&gt;NAME" x="-66.04" y="99.06" rot="R90">
-<attribute name="MFGP" x="-66.04" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MFGN" x="-66.04" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
+<instance part="U$27" gate="&gt;NAME" x="-22.86" y="109.22" rot="R90"/>
+<instance part="U$28" gate="&gt;NAME" x="-66.04" y="99.06" rot="R90"/>
 <instance part="GND27" gate="1" x="-30.48" y="111.76"/>
 <instance part="U$29" gate="G$1" x="-53.34" y="99.06" rot="R180"/>
 <instance part="U$36" gate="G$1" x="-45.72" y="99.06" rot="R180"/>

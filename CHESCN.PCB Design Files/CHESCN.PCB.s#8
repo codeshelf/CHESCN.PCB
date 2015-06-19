@@ -2739,9 +2739,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 <part name="U$38" library="adafruit" deviceset="FIDUCIAL" device="" value="">
 <attribute name="NOTES" value="DNP"/>
 </part>
-<part name="U$39" library="adafruit" deviceset="FIDUCIAL" device="" value="">
-<attribute name="NOTES" value="DNP"/>
-</part>
 <part name="U$40" library="adafruit" deviceset="FIDUCIAL" device="" value="">
 <attribute name="NOTES" value="DNP"/>
 </part>
@@ -2820,6 +2817,28 @@ Source: tps62120.pdf (www.ti.com)</description>
 <part name="U$26" library="KW2" deviceset="SFV12R-1STE1HLF" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$27" library="GW-devices" deviceset="RF-R" device="0402" value="10k">
+<attribute name="MFGN" value="Vishay Dale"/>
+<attribute name="MFGP" value="CRCW080510K0FKEA"/>
+</part>
+<part name="U$28" library="GW-devices" deviceset="RF-R" device="0402" value="10k">
+<attribute name="MFGN" value="Vishay Dale"/>
+<attribute name="MFGP" value="CRCW080510K0FKEA"/>
+</part>
+<part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="U$29" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF">
+<attribute name="MFGN" value="TDK"/>
+<attribute name="MFGP" value="C2012X5R1H104K085AA"/>
+</part>
+<part name="U$36" library="GW-devices" deviceset="RF-C" device="0402" value="1uF">
+<attribute name="MFGN" value="TDK"/>
+<attribute name="MFGP" value="C2012X5R1E105K125AA"/>
+</part>
+<part name="U$37" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
+<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGP" value="GRM219R61E106KA12D"/>
+</part>
+<part name="P+9" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2946,9 +2965,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 <instance part="U$38" gate="G$1" x="-134.62" y="231.14" smashed="yes">
 <attribute name="NOTES" x="-134.62" y="231.14" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$39" gate="G$1" x="-114.3" y="231.14">
-<attribute name="NOTES" x="-114.3" y="231.14" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="U$40" gate="G$1" x="-83.82" y="231.14">
 <attribute name="NOTES" x="-83.82" y="231.14" size="1.778" layer="96" display="off"/>
 </instance>
@@ -3027,6 +3043,28 @@ Source: tps62120.pdf (www.ti.com)</description>
 <instance part="U$26" gate="G$1" x="-500.38" y="144.78" rot="MR90"/>
 <instance part="GND14" gate="1" x="-472.44" y="119.38"/>
 <instance part="+3V3" gate="G$1" x="-474.98" y="170.18"/>
+<instance part="U$27" gate="&gt;NAME" x="-22.86" y="109.22" rot="R90">
+<attribute name="MFGP" x="-22.86" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFGN" x="-22.86" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$28" gate="&gt;NAME" x="-66.04" y="99.06" rot="R90">
+<attribute name="MFGP" x="-66.04" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFGN" x="-66.04" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="GND27" gate="1" x="-30.48" y="111.76"/>
+<instance part="U$29" gate="G$1" x="-53.34" y="99.06" rot="R180">
+<attribute name="MFGP" x="-53.34" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFGN" x="-53.34" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$36" gate="G$1" x="-45.72" y="99.06" rot="R180">
+<attribute name="MFGP" x="-45.72" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFGN" x="-45.72" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$37" gate="G$1" x="-38.1" y="99.06" rot="R180">
+<attribute name="MFGP" x="-38.1" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFGN" x="-38.1" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="P+9" gate="1" x="-58.42" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -3314,14 +3352,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 <junction x="-76.2" y="149.86"/>
 <junction x="-60.96" y="154.94"/>
 <junction x="-73.66" y="167.64"/>
-<pinref part="U$14" gate="G$1" pin="VSS"/>
-<wire x1="-55.88" y1="152.4" x2="-55.88" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="109.22" x2="-55.88" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-55.88" y="152.4"/>
-<pinref part="U$14" gate="G$1" pin="VSSA"/>
-<wire x1="-2.54" y1="109.22" x2="-55.88" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-55.88" y="109.22"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$3"/>
@@ -3472,6 +3502,35 @@ Source: tps62120.pdf (www.ti.com)</description>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="-487.68" y1="147.32" x2="-472.44" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-472.44" y1="147.32" x2="-472.44" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="VSS"/>
+<pinref part="U$14" gate="G$1" pin="VSSA"/>
+<wire x1="-2.54" y1="109.22" x2="-17.78" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="109.22" x2="-17.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U$27" gate="&gt;NAME" pin="2"/>
+<wire x1="-22.86" y1="114.3" x2="-17.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="114.3" x2="-17.78" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-17.78" y="109.22"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="-22.86" y1="114.3" x2="-30.48" y2="114.3" width="0.1524" layer="91"/>
+<junction x="-22.86" y="114.3"/>
+<pinref part="U$29" gate="G$1" pin="2"/>
+<pinref part="U$36" gate="G$1" pin="2"/>
+<wire x1="-53.34" y1="104.14" x2="-45.72" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$37" gate="G$1" pin="2"/>
+<wire x1="-45.72" y1="104.14" x2="-38.1" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="104.14" x2="-35.56" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-45.72" y="104.14"/>
+<junction x="-38.1" y="104.14"/>
+<wire x1="-30.48" y1="114.3" x2="-35.56" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="114.3" x2="-35.56" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-30.48" y="114.3"/>
+<pinref part="U$28" gate="&gt;NAME" pin="2"/>
+<wire x1="-35.56" y1="114.3" x2="-66.04" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="114.3" x2="-66.04" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-35.56" y="114.3"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -3774,10 +3833,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 <wire x1="-43.18" y1="139.7" x2="-68.58" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="139.7" x2="-104.14" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="139.7" x2="-104.14" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="EXCOMIN"/>
-<wire x1="-2.54" y1="93.98" x2="-68.58" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="93.98" x2="-68.58" y2="139.7" width="0.1524" layer="91"/>
-<junction x="-68.58" y="139.7"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -4011,18 +4066,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 <junction x="-76.2" y="142.24"/>
 <junction x="-71.12" y="142.24"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
-<pinref part="U$14" gate="G$1" pin="DISP"/>
-<wire x1="-2.54" y1="96.52" x2="-66.04" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="96.52" x2="-66.04" y2="142.24" width="0.1524" layer="91"/>
-<junction x="-66.04" y="142.24"/>
-<pinref part="U$14" gate="G$1" pin="VDDA"/>
-<wire x1="-2.54" y1="99.06" x2="-63.5" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="99.06" x2="-63.5" y2="144.78" width="0.1524" layer="91"/>
-<junction x="-63.5" y="144.78"/>
-<pinref part="U$14" gate="G$1" pin="VDD"/>
-<wire x1="-2.54" y1="101.6" x2="-60.96" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="101.6" x2="-60.96" y2="147.32" width="0.1524" layer="91"/>
-<junction x="-60.96" y="147.32"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
@@ -4053,6 +4096,20 @@ Source: tps62120.pdf (www.ti.com)</description>
 <wire x1="-269.24" y1="218.44" x2="-271.78" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="218.44" x2="-271.78" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<wire x1="-33.02" y1="96.52" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="96.52" x2="-45.72" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="96.52" x2="-53.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="96.52" x2="-58.42" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="96.52" x2="-58.42" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U$29" gate="G$1" pin="1"/>
+<pinref part="U$36" gate="G$1" pin="1"/>
+<pinref part="U$37" gate="G$1" pin="1"/>
+<junction x="-45.72" y="96.52"/>
+<junction x="-53.34" y="96.52"/>
+<junction x="-38.1" y="96.52"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -4168,17 +4225,12 @@ Source: tps62120.pdf (www.ti.com)</description>
 </net>
 <net name="N$34" class="2">
 <segment>
-<pinref part="U$14" gate="G$1" pin="EXTMODE"/>
-<wire x1="-2.54" y1="104.14" x2="-53.34" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="EXTMODE"/>
 <pinref part="U$6" gate="&gt;NAME" pin="1"/>
 <wire x1="-2.54" y1="182.88" x2="-53.34" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="182.88" x2="-53.34" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="149.86" x2="-58.42" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="149.86" x2="-68.58" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="104.14" x2="-58.42" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="104.14" x2="-58.42" y2="149.86" width="0.1524" layer="91"/>
-<junction x="-58.42" y="149.86"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -4336,6 +4388,49 @@ Source: tps62120.pdf (www.ti.com)</description>
 <pinref part="U$10" gate="G$1" pin="PTE4/LLWU_P2/SPI1_PCS0/MTRACE_D0"/>
 <wire x1="-449.58" y1="127" x2="-457.2" y2="127" width="0.1524" layer="91"/>
 <wire x1="-190.5" y1="127" x2="-449.58" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="U$26" gate="G$1" pin="EN"/>
+<wire x1="-487.68" y1="154.94" x2="-459.74" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-459.74" y1="154.94" x2="-459.74" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="PTE16/ADC0_SE4A/SPI0_PCS0/UART2_TX/FTM_CLKIN0/FTM0_FLT3"/>
+<wire x1="-190.5" y1="129.54" x2="-271.78" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-271.78" y1="129.54" x2="-271.78" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-271.78" y1="132.08" x2="-459.74" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$63" class="2">
+<segment>
+<pinref part="U$14" gate="G$1" pin="EXCOMIN"/>
+<wire x1="-2.54" y1="93.98" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$28" gate="&gt;NAME" pin="1"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="U$14" gate="G$1" pin="VDD"/>
+<wire x1="-2.54" y1="101.6" x2="-33.02" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="VDDA"/>
+<wire x1="-2.54" y1="99.06" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="101.6" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-33.02" y="99.06"/>
+<pinref part="U$14" gate="G$1" pin="DISP"/>
+<wire x1="-2.54" y1="96.52" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="99.06" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$67" class="2">
+<segment>
+<pinref part="U$14" gate="G$1" pin="EXTMODE"/>
+<wire x1="-2.54" y1="104.14" x2="-25.4" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="2">
+<segment>
+<pinref part="U$27" gate="&gt;NAME" pin="1"/>
+<wire x1="-20.32" y1="104.14" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

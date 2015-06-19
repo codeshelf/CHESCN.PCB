@@ -2693,14 +2693,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" value="CRCW080510K0FKEA"/>
 </part>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="U$7" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1H104K085AA"/>
-</part>
-<part name="U$17" library="GW-devices" deviceset="RF-C" device="0402" value="1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1E105K125AA"/>
-</part>
+<part name="U$7" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF"/>
+<part name="U$17" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
 <part name="U$24" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
@@ -2726,10 +2720,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" value="TDK"/>
 <attribute name="MFGP" value="C2012X5R1H104K085AA"/>
 </part>
-<part name="U$34" library="GW-devices" deviceset="RF-C" device="0402" value="1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1E105K125AA"/>
-</part>
+<part name="U$34" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
 <part name="U$35" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
@@ -2826,14 +2817,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" value="CRCW080510K0FKEA"/>
 </part>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="U$29" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1H104K085AA"/>
-</part>
-<part name="U$36" library="GW-devices" deviceset="RF-C" device="0402" value="1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1E105K125AA"/>
-</part>
+<part name="U$29" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF"/>
+<part name="U$36" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
 <part name="U$37" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
@@ -2917,14 +2902,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" x="-68.58" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND13" gate="1" x="-78.74" y="165.1"/>
-<instance part="U$7" gate="G$1" x="-91.44" y="144.78" rot="R180">
-<attribute name="MFGP" x="-91.44" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="-91.44" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="U$17" gate="G$1" x="-83.82" y="144.78" rot="R180">
-<attribute name="MFGP" x="-83.82" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="-83.82" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$7" gate="G$1" x="-91.44" y="144.78" rot="R180"/>
+<instance part="U$17" gate="G$1" x="-83.82" y="144.78" rot="R180"/>
 <instance part="U$24" gate="G$1" x="-76.2" y="144.78" rot="R180">
 <attribute name="MFGP" x="-76.2" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-76.2" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
@@ -2952,10 +2931,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" x="99.06" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="99.06" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$34" gate="G$1" x="104.14" y="160.02" rot="R180">
-<attribute name="MFGP" x="104.14" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="104.14" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$34" gate="G$1" x="104.14" y="160.02" rot="R180"/>
 <instance part="U$35" gate="G$1" x="109.22" y="160.02" rot="R180">
 <attribute name="MFGP" x="109.22" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="109.22" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
@@ -3052,14 +3028,8 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" x="-66.04" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND27" gate="1" x="-30.48" y="111.76"/>
-<instance part="U$29" gate="G$1" x="-53.34" y="99.06" rot="R180">
-<attribute name="MFGP" x="-53.34" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="-53.34" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="U$36" gate="G$1" x="-45.72" y="99.06" rot="R180">
-<attribute name="MFGP" x="-45.72" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="-45.72" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$29" gate="G$1" x="-53.34" y="99.06" rot="R180"/>
+<instance part="U$36" gate="G$1" x="-45.72" y="99.06" rot="R180"/>
 <instance part="U$37" gate="G$1" x="-38.1" y="99.06" rot="R180">
 <attribute name="MFGP" x="-38.1" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-38.1" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>

@@ -2716,10 +2716,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM219R61E106KA12D"/>
 </part>
-<part name="U$33" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF">
-<attribute name="MFGN" value="TDK"/>
-<attribute name="MFGP" value="C2012X5R1H104K085AA"/>
-</part>
+<part name="U$33" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF"/>
 <part name="U$34" library="GW-devices" deviceset="RF-C" device="0402" value="1uF"/>
 <part name="U$35" library="GW-devices" deviceset="RF-C" device="0805" value="10uF">
 <attribute name="MFGN" value="Murata"/>
@@ -2755,7 +2752,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <part name="R2" library="GW-devices" deviceset="RF-R" device="0402" value="33k"/>
 <part name="R3" library="GW-devices" deviceset="RF-R" device="0402" value="10k"/>
 <part name="C4" library="GW-devices" deviceset="RF-C" device="0402" value="47pF"/>
-<part name="R4" library="GW-devices" deviceset="RF-R" device="0402" value="847k"/>
+<part name="R4" library="GW-devices" deviceset="RF-R" device="0402" value="845k"/>
 <part name="R5" library="GW-devices" deviceset="RF-R" device="0402" value="158k"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="GW-devices" deviceset="RF-C" device="0402" value="100pF"/>
@@ -2927,10 +2924,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGP" x="-142.24" y="177.8" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-142.24" y="177.8" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$33" gate="G$1" x="99.06" y="160.02" rot="R180">
-<attribute name="MFGP" x="99.06" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFGN" x="99.06" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$33" gate="G$1" x="99.06" y="160.02" rot="R180"/>
 <instance part="U$34" gate="G$1" x="104.14" y="160.02" rot="R180"/>
 <instance part="U$35" gate="G$1" x="109.22" y="160.02" rot="R180">
 <attribute name="MFGP" x="109.22" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
